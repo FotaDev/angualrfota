@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { SidebarService } from '../sidebar.service';
 
 @Component({
-  selector: 'register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class ProfileComponent implements OnInit {
 
   constructor(public sidebar: SidebarService) { }
 
   ngOnInit() {
 
-    this.sidebar.hide();
+    this.sidebar.show();
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarService } from '../sidebar.service';
 
 @Component({
   selector: 'login',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(public sidebar: SidebarService) { }
 
   ngOnInit() {
+
+    this.sidebar.hide();
   }
 
 }

@@ -7,6 +7,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SidebarService } from './sidebar.service';
+import { NewhireComponent } from './newhire/newhire.component';
+
+
+
 
 
 
@@ -14,7 +21,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const appRoutes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'dashboard', component: DashboardComponent}
+  {path: 'profile', component: ProfileComponent},
+  {path: 'newhire', component: NewhireComponent}
+ 
   
 ];
 
@@ -24,15 +33,20 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidebarComponent,
+    ProfileComponent,
+    NewhireComponent
+ 
   
   ],
   imports: [
+  
     BrowserModule,
     RouterModule.forRoot(appRoutes)
     
   ],
-  providers: [],
+  providers: [SidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
