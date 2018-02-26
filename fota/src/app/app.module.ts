@@ -11,6 +11,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SidebarService } from './sidebar.service';
 import { NewhireComponent } from './newhire/newhire.component';
+import { ItemdetailComponent } from './itemdetail/itemdetail.component';
+import { BasketComponent } from './basket/basket.component';
 
 
 
@@ -22,7 +24,9 @@ const appRoutes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: 'newhire', component: NewhireComponent}
+  {path: 'newhire', component: NewhireComponent},
+  {path: 'itemdetail', component: ItemdetailComponent},
+  {path: 'basket', component: BasketComponent}
  
   
 ];
@@ -36,7 +40,9 @@ const appRoutes: Routes = [
     DashboardComponent,
     SidebarComponent,
     ProfileComponent,
-    NewhireComponent
+    NewhireComponent,
+    ItemdetailComponent,
+    BasketComponent
  
   
   ],
