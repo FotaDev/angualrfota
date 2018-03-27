@@ -111,3 +111,12 @@ h2 {
     width: 300px;
     height: 300px;
   }
+
+.a-size-medium {
+    font-size: 17px!important;
+    line-height: 1.255!important;
+    text-rendering: optimizeLegibility;
+}
+.a-color-price {
+    color: #B12704!important;
+}
