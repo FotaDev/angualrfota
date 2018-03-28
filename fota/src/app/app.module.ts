@@ -14,7 +14,7 @@ import { NewhireComponent } from './newhire/newhire.component';
 import { ItemdetailComponent } from './itemdetail/itemdetail.component';
 import { BasketComponent } from './basket/basket.component';
 import { MyhiresComponent } from './myhires/myhires.component';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 
@@ -45,17 +45,19 @@ const appRoutes: Routes = [
     NewhireComponent,
     ItemdetailComponent,
     BasketComponent,
-    MyhiresComponent
+    MyhiresComponent,
  
   
   ],
   imports: [
   
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    CarouselModule.forRoot()
     
   ],
   providers: [SidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
