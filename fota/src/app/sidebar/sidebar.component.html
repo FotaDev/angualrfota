@@ -10,29 +10,22 @@
       <li class="nav-item active">
         <a class="nav-link" routerLink="/profile">Profile<span class="sr-only">(current)</span></a>
       </li>
+      &nbsp; &nbsp;
       <li class="nav-item">
         <a class="nav-link" routerLink = "newhire">New Hire</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          My Hires
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Future</a>
-          <a class="dropdown-item" href="#">Current</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Past</a>
-        </div>
-      </li>
-    
+      &nbsp; &nbsp;
       <li class="nav-item">
-          <a class="nav-link disabled" href="#">Logout</a>
+          <a class="nav-link" routerLink = "myhires">My Hires</a>
+        </li>
+        &nbsp; &nbsp;    
+      <li class="nav-item">
+          <a class="nav-link " href="#">Logout</a>
         </li>
       
     </ul>
-    <form class="form-inline mt- 4">
-       <a routerLink = "basket"> <i class="material-icons  pr-4">shopping_basket</i></a>
-        
+    <form class="navbar-form navbar-right">
+       <a routerLink = "basket"> <i class="material-icons  pr-4">shopping_basket</i></a>   
     </form>
   </div>
 </nav>

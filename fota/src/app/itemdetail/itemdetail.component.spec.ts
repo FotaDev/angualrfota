@@ -23,3 +23,5 @@ describe('ItemdetailComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
