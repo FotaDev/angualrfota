@@ -46,6 +46,7 @@ const appRoutes: Routes = [
     ItemdetailComponent,
     BasketComponent,
     MyhiresComponent,
+    
  
   
   ],
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
   
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    CarouselModule
     
   ],
   providers: [SidebarService],
